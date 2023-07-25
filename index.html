@@ -13,12 +13,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <!-- Fontaswsome Icon -->
     <script src="https://kit.fontawesome.com/2b8082af16.js" crossorigin="anonymous"></script>
+    <!-- Style -->
+    <style>
+        
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    
+    </style>
     <title>Fruit Burst | Exotic Tastes</title>
 </head>
 
-<body>
-    <header>
-        
+<body class="font-lato">
+    <header class="container mx-auto">
+        <nav class="navbar  bg-white lg:bg-[#F85559] rounded-full flex flex-row-reverse lg:flex-row justify-between relative my-12">
+            <!-- Visible Menu link when large but not in phone -->
+            <div class="navbar-center hidden absolute lg:static lg:flex text-white ml-4 space-x-3 font-medium">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+
+            <!-- Large display not visible, Phone Display: Visible -->
+              <div class="dropdown dropdown-end static lg:absolute">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content dropdown-right mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            <!-- Logo and Site Name -->
+            <div class="flex text-black lg:text-white items-center">
+                <img src="./images/logo.png" alt="">
+                <a class="btn btn-ghost normal-case text-xl font-bold">Fruit Burst</a>
+            </div>
+            <!-- Search Bar and Magnifying Icon -->
+            <div class="hidden lg:flex relative lg:mr-8">
+                <input type="text" placeholder="Search" class="rounded-full"/>
+                <i class="fa-solid fa-magnifying-glass absolute right-3"></i>
+            </div> 
+        </nav>
     </header>
     <main>
 
