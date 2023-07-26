@@ -27,7 +27,7 @@
 <body class="font-lato">
     <header class="container mx-auto">
         <!-- Nav Starts -->
-        <nav class="navbar  bg-white md:bg-[#F85559] md:px-6 lg:bg-[#F85559] rounded-full flex flex-row-reverse lg:flex-row justify-between relative my-12">
+        <nav class="navbar  bg-white md:bg-[#F85559] md:px-6 lg:bg-[#F85559] rounded-full flex flex-row-reverse lg:flex-row justify-between relative my-6 md:my-12">
             <!-- Visible Menu link when large but not in phone -->
             <div class="navbar-center hidden absolute lg:static lg:flex text-white ml-4 space-x-3 font-medium">
                 <ul class="menu menu-horizontal px-1">
@@ -62,8 +62,7 @@
                 <input type="text" placeholder="Search Here" class="rounded-full w-full max-w-lg py-2 px-10 "/>
                 <i class="fa-solid fa-magnifying-glass absolute right-5"></i>
             </div> 
-        </nav>
-        
+        </nav>     
         <div class="relative flex flex-col items-center">
             <!-- Carousel/Slider Starts -->
             <div class="carousel w-full rounded-lg">
@@ -138,7 +137,7 @@
                 </div>
               </div>
             <!-- Float section/// don't display in mobile device -->
-            <div class="rounded-lg hidden md:flex lg:flex justify-center space-x-3 bg-white md:static lg:absolute  -bottom-24 py-8">
+            <div class="rounded-lg hidden md:flex lg:flex justify-center space-x-3 bg-white md:static lg:absolute  -bottom-24 py-8 drop-shadow-2xl md:drop-shadow-none">
                 <div class="flex flex-col items-center">
                     <img class="w-[75%] md:bg-auto" src="./images/fruit1.png" alt="">
                     <p>Grape</p>
@@ -161,10 +160,212 @@
                 </div>
             </div>
         </div>
-        
-
     </header>
-    <main>
+    <main class="container mx-auto">
+        <!-- Deal Of the day section -->
+        <div class="mt-6 lg:mt-24 flex flex-col md:flex-row justify-center items-center text-center md:text-left">
+            <div class="flex-1">
+                <h3 class="text-[#121212] font-extrabold text-5xl">Deal of the day</h3>
+                <p class="font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="flex items-center flex-1 justify-end mt-8 md:mt-auto">
+                <div class="flex flex-col items-center">
+                    <h3 class="text-5xl font-extrabold text-[#121212]">29</h3>
+                    <p class="text-[#4a4949]">Days</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                <div class="flex flex-col items-center">
+                    <h3 class="text-5xl font-extrabold text-[#121212]">15</h3>
+                    <p class="text-[#4a4949]">Hours</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                <div class="flex flex-col items-center">
+                    <h3 class="text-5xl font-extrabold text-[#121212]">29</h3>
+                    <p class="text-[#4a4949]">Minutes</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                <div class="flex flex-col items-center">
+                    <h3 class="text-5xl font-extrabold text-[#121212]">05</h3>
+                    <p class="text-[#4a4949]">Seconds</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card with Modal Starts -->
+        <section class="grid justify-center mt-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- First Card -->
+            <div class="text-center flex flex-col items-center rounded-lg border-gray-300 border px-12 pt-4 pb-4 md:p-8 md:pb-6">
+
+                <img class="w-[52%]" src="./images/fruit6.png" alt="">
+                <h3 class="font-extrabold text-2xl mt-8">12.90$ - 18.85$</h3>
+                <hr class="my-2 md:my-6 w-full">
+                <p class="mb-2 md:mb-6">Apples</p>
+                <!-- Rating Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class="mb-4 md:mb-6">
+                    <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                    <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                    <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                    <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                    <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                    <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                </svg>
+                <p class="text-[#F85559] "><a href="#my_modal" class="">Details</a></p>
+                
+                <!-- Modal Design -->
+                <div class="modal " id="my_modal">
+                <div class="modal-box  flex flex-col items-center px-4 lg:px-24">
+                    <img class="w-[50%]" src="./images/fruit6.png" alt="">
+                    <h3 class="font-extrabold text-3xl md:text-4xl lg:text-5xl mt-8">Apple</h3>
+                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <!-- Rating Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class="mb-8">
+                        <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                        <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                        <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                        <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                        <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                        <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                    </svg>
+                    <div class="modal-action mt-0">
+                    <a href="#" class="border border-[#F85559] rounded-lg font-extrabold bg-white text-[#F85559] py-4 px-8">Close</a>
+                    <a href="#" class="rounded-lg font-extrabold bg-[#F85559] text-white py-4 px-8">Buy Now</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Second card -->
+            <div class="text-center flex flex-col items-center rounded-lg border-gray-300 border px-12 pt-4 pb-4 md:p-8 md:pb-6">
+
+                <img class="w-[65%]" src="./images/fruit7.png" alt="">
+                <h3 class="font-extrabold text-2xl mt-8">12.90$ - 18.85$</h3>
+                <hr class="my-2 md:my-6 w-full">
+                <p class="mb-2 md:mb-6">Orange</p>
+                <!-- Rating Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class="mb-4 md:mb-6">
+                    <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                    <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                    <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                    <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                    <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                    <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                </svg>
+                <p class="text-[#F85559] "><a href="#my_modal_2" class="">Details</a></p>
+                
+                <!-- Modal Design -->
+                <div class="modal " id="my_modal_2">
+                <div class="modal-box  flex flex-col items-center px-4 lg:px-24">
+                    <img class="w-[50%]" src="./images/fruit7.png" alt="">
+                    <h3 class="font-extrabold text-3xl md:text-4xl lg:text-5xl mt-8">Orange</h3>
+                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <!-- Rating Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class="mb-8">
+                        <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                        <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                        <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                        <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                        <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                        <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                    </svg>
+                    <div class="modal-action mt-0">
+                    <a href="#" class="border border-[#F85559] rounded-lg font-extrabold bg-white text-[#F85559] py-4 px-8">Close</a>
+                    <a href="#" class="rounded-lg font-extrabold bg-[#F85559] text-white py-4 px-8">Buy Now</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Third card -->
+            <div class="text-center flex flex-col items-center rounded-lg border-gray-300 border px-12 pt-4 pb-4 md:p-8 md:pb-6">
+
+                <img class="w-[65%]" src="./images/fruit8.png" alt="">
+                <h3 class="font-extrabold text-2xl mt-8">12.90$ - 18.85$</h3>
+                <hr class="my-2 md:my-6 w-full">
+                <p class="mb-2 md:mb-6">Dragon Fruit</p>
+                <!-- Rating Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class="mb-4 md:mb-6">
+                    <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                    <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                    <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                    <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                    <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                    <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                </svg>
+                <p class="text-[#F85559] "><a href="#my_modal_3" class="">Details</a></p>
+                
+                <!-- Modal Design -->
+                <div class="modal " id="my_modal_3">
+                    <div class="modal-box  flex flex-col items-center px-4 lg:px-24">
+                        <img class="w-[50%]" src="./images/fruit8.png" alt="">
+                        <h3 class="font-extrabold text-3xl md:text-4xl lg:text-5xl mt-8">Dragon Fruit</h3>
+                        <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <!-- Rating Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class="mb-8">
+                            <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                            <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                            <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                            <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                            <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                            <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                        </svg>
+                        <div class="modal-action mt-0">
+                        <a href="#" class="border border-[#F85559] rounded-lg font-extrabold bg-white text-[#F85559] py-4 px-8">Close</a>
+                        <a href="#" class="rounded-lg font-extrabold bg-[#F85559] text-white py-4 px-8">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fourth Card -->
+            <div class="text-center flex flex-col items-center rounded-lg border-gray-300 border px-12 pt-4 pb-4 md:p-8 md:pb-6">
+
+                <img class="w-[65%]" src="./images/fruit9.png" alt="">
+                <h3 class="font-extrabold text-2xl mt-8">12.90$ - 18.85$</h3>
+                <hr class="my-2 md:my-6 w-full">
+                <p class="mb-2 md:mb-6">Banana</p>
+                <!-- Rating Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class="mb-4 md:mb-6">
+                    <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                    <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                    <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                    <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                    <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                    <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                </svg>
+                <p class="text-[#F85559] "><a href="#my_modal_4" class="">Details</a></p>
+                
+                <!-- Modal Design -->
+                <div class="modal " id="my_modal_4">
+                <div class="modal-box  flex flex-col items-center px-4 lg:px-24">
+                    <img class="w-[50%]" src="./images/fruit9.png" alt="">
+                    <h3 class="font-extrabold text-3xl md:text-4xl lg:text-5xl mt-8">Banana</h3>
+                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <!-- Rating Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class="mb-8">
+                        <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                        <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                        <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                        <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                        <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                        <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                    </svg>
+                    <div class="modal-action mt-0">
+                    <a href="#" class="border border-[#F85559] rounded-lg font-extrabold bg-white text-[#F85559] py-4 px-8">Close</a>
+                    <a href="#" class="rounded-lg font-extrabold bg-[#F85559] text-white py-4 px-8">Buy Now</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
