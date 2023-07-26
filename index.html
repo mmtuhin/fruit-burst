@@ -26,21 +26,24 @@
 
 <body class="font-lato">
     <header class="container mx-auto">
-        <nav class="navbar  bg-white lg:bg-[#F85559] rounded-full flex flex-row-reverse lg:flex-row justify-between relative my-12">
+        <!-- Nav Starts -->
+        <nav class="navbar  bg-white md:bg-[#F85559] md:px-6 lg:bg-[#F85559] rounded-full flex flex-row-reverse lg:flex-row justify-between relative my-12">
             <!-- Visible Menu link when large but not in phone -->
             <div class="navbar-center hidden absolute lg:static lg:flex text-white ml-4 space-x-3 font-medium">
                 <ul class="menu menu-horizontal px-1">
-                  <li><a>Home</a></li>
-                  <li><a>About Us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All Fruits</a></li>
+                  <li><a class="text-lg">Home</a></li>
+                  <li><a class="text-lg">About Us</a></li>
+                  <li><a class="text-lg">Shop</a></li>
+                  <li><a class="text-lg">All Fruits</a></li>
                 </ul>
             </div>
 
             <!-- Large display not visible, Phone Display: Visible -->
               <div class="dropdown dropdown-end static lg:absolute">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
                 </label>
                 <ul tabindex="0" class="menu menu-sm dropdown-content dropdown-right mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                     <li><a>Home</a></li>
@@ -50,16 +53,60 @@
                 </ul>
               </div>
             <!-- Logo and Site Name -->
-            <div class="flex text-black lg:text-white items-center">
-                <img src="./images/logo.png" alt="">
-                <a class="btn btn-ghost normal-case text-xl font-bold">Fruit Burst</a>
+            <div class="flex text-black md:text-white lg:text-white items-center ">
+                <img class="w-10 md:w-auto lg:w-auto" src="./images/logo.png" alt="Site Logo">
+                <a class="btn btn-ghost normal-case text-2xl md:text-3xl lg:text-4xl font-bold">Fruit Burst</a>
             </div>
             <!-- Search Bar and Magnifying Icon -->
             <div class="hidden lg:flex relative lg:mr-8">
-                <input type="text" placeholder="Search" class="rounded-full"/>
-                <i class="fa-solid fa-magnifying-glass absolute right-3"></i>
+                <input type="text" placeholder="Search Here" class="rounded-full w-full max-w-lg py-2 px-10 "/>
+                <i class="fa-solid fa-magnifying-glass absolute right-5"></i>
             </div> 
         </nav>
+        <!-- Carousel/Slider Starts -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="/images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="/images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="/images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- Slide 4 with hero -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="hero w-full" style="background-image: url(./images/banner4.png);">
+                    <div style="background-image: linear-gradient(to bottom, #121212 0%,rgba(18, 18, 18, 0.00) 100%)" class="hero-overlay bg-opacity-0"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                        <p class="mb-5">We supply highly quality organic products</p>
+                        <button class="rounded-lg font-extrabold bg-[#F85559] text-white py-4 px-8">Shop Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slider Left and Right Button -->
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+          <!-- Hero -->
+          
     </header>
     <main>
 
